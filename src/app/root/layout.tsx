@@ -5,8 +5,8 @@ import { Inter } from "next/font/google";
 
 import "../globals.css";
 import LeftSidebar from "@/components/dashbord/LeftSidebar";
-// import LeftSidebar from "@/components/shared/LeftSidebar";
-// import Topbar from '@/components/shared/TopBar';
+import Topbar from "@/components/dashbord/TopBar";
+
 
 
 
@@ -25,7 +25,7 @@ export default function RootLayout({
   
       <html lang='en'>
           <body className={inter.className}>
-            {/* <Topbar /> */}
+            <Topbar />
             {/* <Header /> */}
             <main className='flex flex-row h-fit'>
               <LeftSidebar />
